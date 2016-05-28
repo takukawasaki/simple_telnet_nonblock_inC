@@ -110,6 +110,9 @@ send_recv_loop(void)
      (void) setbuf(stdin, NULL);
      (void) setbuf(stdout, NULL);
 
+     (void) set_block(0,0);
+     (void) set_block(g_soc, 0);
+
 
      for (;;) {
           data_flag = 0;
